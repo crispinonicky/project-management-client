@@ -19,6 +19,9 @@ class ProjectList extends Component {
         listOfProjects: responseFromApi.data
       })
     })
+    .catch((err)=>{
+      console.log(err);
+    })
   }
 
   componentDidMount() {
